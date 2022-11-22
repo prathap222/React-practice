@@ -1,21 +1,14 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useState} from 'react';
+import { Teacher } from './Teacher';
 
  const One = () => {
-  
 
-const [values, setValues] = useState([]);
 
-useEffect(()=> {
 
-  fetch('https://jsonplaceholder.typicode.com/todos/1')
-  .then(response => response.json())
-  .then(json => setValues([json]))
-
-}, [])
 
   return (
     <div>
-     {values.map (e => <h1>{e.title}</h1>)}
+     <Teacher/>
       </div>
   )
 }

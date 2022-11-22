@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import TodoList from './components/TodoList';
@@ -6,15 +6,24 @@ import ThemeContextProvider from './contexts/ThemeContext';
 import AuthContextProvider from './contexts/AuthContext';
 import One from './components/One';
 
+export const studentContext = React.createContext("");
+
+
 function App() {
   return (
     <div className='App'>
+      
    <div className='ui raised very padded text container segment' >
     <AuthContextProvider>
     <ThemeContextProvider>
     <Navbar/>
     <TodoList/>
-    <One/>
+ 
+    
+      
+      <One/>
+   
+    
     </ThemeContextProvider>
     </AuthContextProvider>
    </div>
