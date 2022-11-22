@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import TodoList from './components/TodoList';
 import ThemeContextProvider from './contexts/ThemeContext';
 import AuthContextProvider from './contexts/AuthContext';
+import One from './components/One';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <ThemeContextProvider>
     <Navbar/>
     <TodoList/>
+    <One/>
     </ThemeContextProvider>
     </AuthContextProvider>
    </div>
