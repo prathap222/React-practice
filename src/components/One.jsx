@@ -15,7 +15,7 @@ useEffect(()=> {
 
   return (
     <div>
-     
+     {values.map (e => <h1>{e.title}</h1>)}
       </div>
   )
 }
