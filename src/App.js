@@ -3,6 +3,8 @@ import {useFormik} from 'formik';
 import * as yup from "yup"
 import './App.css';
 import { min, values } from 'lodash';
+import {motion} from "framer-motion";
+import Image1 from "./images/img2.gif"
 
 // Formik and Yup
 // npm install formik yup --save
@@ -120,10 +122,22 @@ const App = () => {
         />
         {formik.errors.confirmpassword ? <div className='text-danger'>{formik.errors.confirmpassword}</div> : null}
         </div>
+        
 
         <button className='btn btn-primary'>Submit</button>
       </form>
       </div>
+      <div className='card mt-3  ' >
+      <img className="card-img-top" src={Image1} alt="Card image cap"/>
+        <div className='card-body'>
+          <h3 className='card-title'>Prathap</h3>
+          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" className="btn btn-primary">Go somewhere</a>
+        </div>
+
+      </div>
+
+      
       </div>
   )
 }
